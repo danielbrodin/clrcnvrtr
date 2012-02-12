@@ -27,6 +27,10 @@ window.onload = function() {
 
 };
 
+function saveColor() {
+	// empty
+}
+
 function setBackground(color) {
 	document.body.style.background = color;
 }
