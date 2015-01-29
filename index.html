@@ -9,16 +9,6 @@
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Kotta+One|Iceberg' rel='stylesheet' type='text/css'>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-18479211-5']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
 	</head>
 	<body>
 
@@ -32,11 +22,12 @@
 			@danielbrodin
 		 -->
 
-		<div class=container>
+		<div class="container">
 			<h1>Clr Cnvrtr</h1>
 			<p class="center notMobile">
-				Convert your <b>HEX</b>, <b>RGB</b> &amp; <b>HSL</b> values, or just edit it till you find that <b>awesome</b> color you are looking for and <b>share</b> it with the world. If you just want a new <b>random</b> color you can <a href="#" id="random" class=standout>click here</a>.
+				Convert your <b>HEX</b>, <b>RGB</b> &amp; <b>HSL</b> values or get a brand new <a href="#" id="random" class="standout">random</a> color.
 			</p>
+
 			<form>
 				<input type="text" placeholder="#FFFFFF" id="hex" class="full transition inset">
 				<input type="text" placeholder="rgb(255, 255, 255)" id="rgb" class="full transition inset">
@@ -47,19 +38,30 @@
 				* RGB and HSL values can be increased / decreased with the up and down arrows.
 			</p>
 
-			<div class=center>
+			<div class="center">
 				<a href="http://danielbrodin.se" class="transition madeBy full">
-					Made by <span class=standout>Daniel Brodin</span>
+					Made by <span class="standout">Daniel Brodin</span>
 				</a>
 				<ul class="unstyled horizontal">
-				<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://clrcnvrtr.com" data-via="danielbrodin" data-hashtags="clrcnvrtr">Tweet</a></li>
+				<!-- <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://clrcnvrtr.com" data-via="danielbrodin" data-hashtags="clrcnvrtr">Tweet</a></li> -->
 				<li><a href="https://twitter.com/danielbrodin" class="twitter-follow-button" data-show-count="false" data-width="139px">Follow @danielbrodin</a></li>
 				</ul>
 			</div>
 		</div>
-		<script src="http://platform.twitter.com/widgets.js"></script>
 		<script src="js/shake.js"></script>
 		<script src="js/incrementable.js"></script>
-		<script src="js/global.js"></script>
+		<script src="js/Clrcnvrtr.js"></script>
+		<script src="js/main.js"></script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-18479211-5']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 	</body>
 </html>
