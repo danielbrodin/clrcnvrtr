@@ -87,13 +87,18 @@ function rgb(hex) {
 
 	hex = hex.slice(1);
 
-	if(hex.length == 3) {
-		hex = hex + hex;
+	if(hex.length === 6) {
+		values.push(parseInt(hex.substr(0, 2), 16));
+		values.push(parseInt(hex.substr(2, 2), 16));
+		values.push(parseInt(hex.substr(4, 2), 16));
+	} else {
+		var r = hex.substring(0, 1) + hex.substring(0, 1);
+		var g = hex.substring(1, 2) + hex.substring(1, 2);
+		var b = hex.substring(2, 3) + hex.substring(2, 3);
+		values.push(parseInt(r, 16));
+		values.push(parseInt(g, 16));
+		values.push(parseInt(b, 16));
 	}
-
-	values.push(parseInt(hex.substr(0, 2), 16));
-	values.push(parseInt(hex.substr(2, 2), 16));
-	values.push(parseInt(hex.substr(4, 2), 16));
 
 	return 'rgb('+ values.join(',') +')';
 }
